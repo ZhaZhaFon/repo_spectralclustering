@@ -13,7 +13,8 @@
     spectralcluster/ 谱聚类算法
     tests/ 合法性测试
     demo.ipynb 演示程序
-    infer_rttm.py 推理, 并将结果写为.rttm标签文件
+    infer_all.py 批量推理, 并将结果写为.rttm标签文件
+    infer_rttm.py 单次推理, 并将结果写为.rttm标签文件
 ```
 
 ---
