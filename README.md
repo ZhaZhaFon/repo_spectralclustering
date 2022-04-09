@@ -1,21 +1,29 @@
-# repo_sd-clustering
+# repo_spectralclustering
 
-[原始仓库链接](https://github.com/wq2012/SpectralCluster), 做了一些修改方便使用, 粗体为已跑
+[原始仓库链接](https://github.com/wq2012/SpectralCluster), 做了一些修改方便使用
 
-## 改动
-* demo.py用于实现整个pipeline (VAD -> Speaker Embedding -> Clustering)
+### 功能
+* 基于谱聚类(Spectral Clustering)实现说话人分割(Speaker Diariazation)中的speaker embedding聚类
+* 其他部件(VAD、Speaker Encoder)需要额外实现, 本项目中分别使用预训练好的[sileroVAD](https://pytorch.org/hub/snakers4_silero-vad_vad/)和[dvector](https://github.com/ZhaZhaFon/repo_dvector/releases/tag/pretrained)
+
+### 改动
+* 增加demo.ipynb用于掩饰整个pipeline的实现 (VAD -> Speaker Embedding -> Clustering)
 * 增加了Makefile方便运行
-* 增加了infer_rttm.py将推理结果写为.rttm标签文件
+* 增加了infer_rttm.py和infer_all.py将推理结果写为.rttm标签文件
 
 ### 文件组织
 ```
     docs/ spectralcluster工具包文档
     spectralcluster/ 谱聚类算法
     tests/ 合法性测试
+    others/ 其他文件
     demo.ipynb 演示程序
     infer_all.py 批量推理, 并将结果写为.rttm标签文件
     infer_rttm.py 单次推理, 并将结果写为.rttm标签文件
 ```
+
+### 使用
+详见Makefile
 
 ---
 ---
