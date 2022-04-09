@@ -1,3 +1,22 @@
+# repo_sd-clustering
+
+[原始仓库链接](https://github.com/wq2012/SpectralCluster), 做了一些修改方便使用, 粗体为已跑
+
+## 改动
+* 增加了PresidentDebate2016音视频作为直观的演示
+* demo.py用于实现整个pipeline (VAD -> Speaker Embedding -> Clustering)
+
+### 文件组织
+```
+    docs/
+    spectralcluster/
+    tests/
+    demo.ipynb
+```
+
+---
+---
+
 # Spectral Clustering
 [![Python application](https://github.com/wq2012/SpectralCluster/workflows/Python%20application/badge.svg)](https://github.com/wq2012/SpectralCluster/actions) [![PyPI Version](https://img.shields.io/pypi/v/spectralcluster.svg)](https://pypi.python.org/pypi/spectralcluster) [![Python Versions](https://img.shields.io/pypi/pyversions/spectralcluster.svg)](https://pypi.org/project/spectralcluster) [![Downloads](https://pepy.tech/badge/spectralcluster)](https://pepy.tech/project/spectralcluster) [![codecov](https://codecov.io/gh/wq2012/SpectralCluster/branch/master/graph/badge.svg)](https://codecov.io/gh/wq2012/SpectralCluster) [![Documentation](https://img.shields.io/badge/api-documentation-blue.svg)](https://wq2012.github.io/SpectralCluster)
 
